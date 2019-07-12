@@ -14,8 +14,7 @@ class SearchText(unittest.TestCase):
 
     def test_signup(self):
 
-        btn = self.driver.find_element_by_xpath("//button[@routerlink='/signup']")
-        btn.click()
+        self.driver.find_element_by_xpath("//button[@routerlink='/signup']").click()
 
         first_name = self.driver.find_element_by_id("mat-input-0")
         first_name.send_keys("Aslam")
