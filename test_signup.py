@@ -25,8 +25,8 @@ class SearchText(unittest.TestCase):
         self.assertTrue ('KithunuAppMobile' in self.driver.title)
 
     def tearDown(self):
-        pass
-        # self.driver.quit()
+        # pass
+        self.driver.quit()
 
 if __name__ == '__main__':
     unittest.main()
