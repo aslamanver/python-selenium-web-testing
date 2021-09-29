@@ -13,7 +13,7 @@ class SearchText(unittest.TestCase):
 
     def setUp(self):
 
-        self.driver = webdriver.Chrome('./drivers/linux/chromedriver_76')
+        self.driver = webdriver.Chrome('./drivers/linux/chromedriver')
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
         self.driver.get("http://www.google.com/")
